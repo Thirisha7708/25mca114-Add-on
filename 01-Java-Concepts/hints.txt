@@ -1,0 +1,271 @@
+JAVA PROGRAMMING:
+==================
+
+STRUCTURE
+1.	public static void main(String[] args)
+2.	public static void main(String []args)
+3.	public static void main(String... args)
+4.	public static void main(String args[])
+5.	static public void main(String[] args)
+6.	static public void main(String []args)
+7.	static public void main(String... args)
+8.	static public void main(String args[])
+
+
+DATATYPE:
+==========
+
+-->Primitive
+8type
+
+*Boolean
+    Boolean-->1bit
+*Number
+    byte-->1byte
+    short-->2byte
+    int-->4byte
+    long-->8byte
+*Character
+    char(using single qutation'')-->2byte
+*Floating point
+    float-->4byte//8 including point(54.5745876f)
+    double-->8byte//16 including point(23.374658768789798)
+
+-->Non Primitive:
+===================
+   String
+   Arrays
+   Classes
+   Interfaces
+   Enums(enumeration)
+
+manaual space=""
+//local varible-->no default value
+
+ENVIRONMENT
+
+-->Compile-time environment(JDK)-->compiler
+-->Run-time environment(JRE+JVM)-->Interpreter
+
+compiler-->Full code execution
+Interpreter-->Line by Line execution
+
+
+
+variable-->to store a single data in memory.
+Syntax:
+datatype variable_name;//variable Declaration
+datatype variable_name=value;//variable Initialization
+
+Declaration:
+variable been declared without assigning the value.
+
+Initialization:
+variable which with value is assigned called initialization.
+
+
+why java is static programming language?
+-->we need to mention the datatype so that jvm can know what type of data been assigned.
+
+Variable Types
+3types:
+  *instance variable
+  *Static variable
+  *Local variable
+
+looping
+1]entry check
+   for()
+   while()
+2]exit check
+   do while()
+3]break,continue
+4]foreach()
+
+================
+
+public static void main(String[] args)
+
+public->Access Specifier or modifier as well as keyword
+static->keyword and access class without object
+void->return type
+main->special method where JVM knowns as starting point of program
+String[]->Array with string type
+String[] args->Command Line argument
+
+
+Platforms in java
+-->Java SE(Standard Edition)
+-->Java EE(Enterprise Edition)
+-->Java ME(Micro Edition)
+-->Java FX
+
+Application we can Develop
+-->Windows Application or desktop application or Standalone app
+-->Web Application
+-->Mobile Application
+-->Window Based Application
+
+=================
+public static void main(string[] args)
+
+public-->Access Specifier or modifier as well as keyboard
+static-->Keyword and access class without object
+void-->return type
+main-->special method where JVM knowns as starting point of program
+string[]-->Array with string type
+string[]-->Command line Argument
+
+STRING LITERAL:
+Syntax:
+
+====
+String s1="Hello";---->String Constant Pool(SCP)
+
+String object:
+
+Syntax String(Reference name)=new String("Hello");SCP and Heap
+
+============
+
+CLASS LOADER:
+-->Class(Method)Area
+-->Stack
+-->Heap
+-->PC(Program Counter) Register
+-->Native Method Stack
+
+public class {
+  String name="Thirisha"; //Instance variable
+  static int age=21; //Static variable
+
+  void display() {
+  int rollno=4128;
+  System.out.println(rollno);
+}
+  public static void main(String[] args){
+      int a=10;
+      Demo d=new Demo();
+}
+ }
+
+===================
+               DIAGRAM:
+
+         [Java Class File(.class)] 
+
+                    |
+                    |
+              [Class Loader]
+                    |
+                    |
+          [Byte time Data Areas]
+                    |
+                    |
+
+         [Heap|Stack|Method Area]
+
+             [Execution Engine] 
+                    |
+                    |
+         (Interpreters(JIT Compiler))
+                    |
+                    |
+          (Native OS and Libraries) 
+
+
+=======================
+
+Formula: number=number*(i-k)/(k+1);-->Used in code
+
+Binomial Formula:
+
+C(n-k)=(nk)=n!/k!(n-k)!
+
+Recursive Formula:
+C(n,k)=C(n-1,k-1)+C(n-1,k)
+
+JAVA INTERMEDIATE:
+===================
+-->Methods and its types
+-->Constructor and  its types
+-->Access modifiers
+-->OOPs Concepts
+       **Class
+       **Object
+       **Encapsulation
+       **Polymorphism
+       **Inheritance
+       **Abstraction
+
+Java Advanced:
+==============
+-->Collections concept and its framework
+        **List
+        **Map
+        **Set
+        **Queue
+        **Deque
+
+-->File Handling
+-->JDBC Connectivity
+
+project-1:
+-->Console based Application without JDBC
+-->Console based Application with JDBC
+
+TypeCasting:
+-->Widening(Implict casting or Upcasting)
+-->Narrowing(Explict casting or Downcasting)
+
+Upcasting:
+-->Convert smaller datatype data into larger datatype data can ba done automatically.
+
+Downcasting:
+-->Convert larger datatype data into small datatype data and need to specify manually as it leads to loss of some data.
+
+Arrays:
+========
+-->Collection of elements of a single datatype stored in adjacent memory location
+-->We can access elements by specifying the name and the subscript number of the array
+-->The subscript number specifies the position of an element within the array
+-->It is also called Index of the element
+-->The 1st element of array has an index 0 and last element has an index one less than the size(n-1) of the array
+
+Types of arrays:
+-->One-dimensional array
+-->Multi-dimensional array
+
+One -dimensional array:
+-->ID array is a collection of elements with a single index value
+-->ID array can have multiple columns but one row
+
+Creation of ID array involves 2 types:
+**Declare an array
+**Assign values to the array
+
+Syntax:
+arraytype[] arrayname=new arraytype[size];
+
+arraytype-->specifies the type of element to be stored in array
+arrayname-->specifies the name of the array
+[size]-->specifies the size of the array
+
+arraytype[] arrayname=new arraytype[Row size][Col size];
+arraytype-->specifies the type of element to be stored in array
+arrayname-->specifies the name of the array
+[Row size]-->Specifies the Row size of the array
+[Col size]-->Specifies the column size of the array
+
+for each loop or Enchanced for loop
+=====================================
+syntax:
+for(datatype variable_name: object(array_name)){
+  statement;
+}
+
+
+                 
+
+                          
+                 
